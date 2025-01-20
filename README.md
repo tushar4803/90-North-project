@@ -1,1 +1,9 @@
-# 90-North-project
+To run the chat application on your system, first ensure that you have Python (version 3.6 or above) and pip (Python's package installer) installed. You can verify this by running `python --version` and `pip --version` in your terminal or command prompt. If Python is not installed, download and install it from the official [Python website](https://www.python.org/downloads/).
+
+Once Python and pip are ready, download or clone the project files. If you choose to manually create the files, organize them according to the folder structure provided earlier. This includes creating `app.py` for the Flask application, `index.html` for the frontend, `chat.js` for WebSocket interaction, `style.css` for styling, and `models.py` for database models. 
+
+It's recommended to use a virtual environment for managing dependencies. In your project folder, create a virtual environment with `python -m venv venv` and activate it using `venv\Scripts\activate` (on Windows) or `source venv/bin/activate` (on macOS/Linux). After activation, install the necessary libraries, such as Flask, Flask-SQLAlchemy, and Flask-SocketIO, by running `pip install -r requirements.txt` or manually using `pip install Flask Flask-SQLAlchemy flask-socketio`.
+
+Once the dependencies are installed, you can run the Flask app by navigating to the `backend` folder and executing `python app.py`. This starts the Flask server, and you should see output indicating that the application is running at `http://127.0.0.1:5000/` or `http://localhost:5000/`. Open this URL in a browser, and you will be directed to the login page of the chat application. From there, you can sign up, log in, and start chatting with other users. 
+
+If you encounter any issues, ensure that all dependencies are installed and that the WebSocket connection is functioning correctly. Additionally, if port 5000 is already in use, you can change the port number in the Flask app. Once you’re done, you can stop the application by pressing `Ctrl + C` in the terminal.
